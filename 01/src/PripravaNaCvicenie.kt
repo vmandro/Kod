@@ -54,6 +54,7 @@ fun main(args:Array<String>) {
     val dd: Map<Int, List<Int>> = list10.groupBy { it % 3}
     val jj: List<Int>? = dd[0]
     // A A?
+    
     println(dd[2]?.count())
     println(list10.reduce { acc,x -> acc+x })
 
