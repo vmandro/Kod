@@ -15,12 +15,6 @@ fun main(args: Array<String>) {
                  .map { it + delta}   // x -> x + delta
                  .filter {it % 2 == 0}
     )
-    println(family.map { it.first })  // mapToObj
-    println(family.filter { it.age?:0 > 100 } )
-    println(family.all { it.age?:0 < 100 } )
-    println(family.all { it.name == "Dracula" } )
-    println(family.groupBy { it.father } )
-    println(family.filter { it.age == family.maxBy { person: Person -> person.age?:0 }?:0 } )
     val numbers = mapOf(0 to "zero", 1 to "one")
     for((father, persons) in family.groupBy { it.father })
         println("${persons.size} ma otca $father")
