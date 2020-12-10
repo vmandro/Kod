@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ЯƎVERSI</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="nick">nickname</string>
+    <string name="email">e-mail</string>
+    <string name="password">password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="play">Play</string>
+    <string name="connect">Connect</string>
+    <string name="connection_peding">Connection\n pending</string>
+    <string name="disconnect">Disonnect</string>
+    <string name="enter_nick">Enter the second player\'s nickname\n to connect</string>
+    <string name="wait">or wait till the player connects</string>
+    <string name="welcome_signed_in">Welcome to the Яeversi game!\nClick \'Play\' to connect to the other player</string>
+    <string name="welcome_new">Welcome to the ЯƎVERSI game!\nSign in or Sign up to play with friend online</string>
+    <string name="player2_connected">Second player connected</string>
+    <string name="game_status">On turn: %s, winner: %s\ngreens: %s, reds: %s\nYour players role: %s</string>
+    <string name="give_up_button_text">Give Up</string>
+    <string name="winner_status">%s won!</string>
+</resources>

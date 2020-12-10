@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:id="@+id/playground_view" android:orientation="vertical"
+              android:background="@color/common_google_signin_btn_text_light_disabled">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_margin="8dp">
+        <TextView
+                android:text="@string/game_status"
+                android:layout_width="261dp"
+                android:id="@+id/pg_status_bar"
+                android:layout_height="84dp"
+                app:layout_constraintEnd_toStartOf="@+id/give_up_button"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
+        <Button
+                android:text="@string/give_up_button_text"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content" android:id="@+id/give_up_button"
+                app:layout_constraintStart_toEndOf="@+id/pg_status_bar" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp" android:layout_marginRight="16dp"/>
+    </android.support.constraint.ConstraintLayout>
+    <app.reversi.view.PlaygroundView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:id="@+id/playgroundView"/>
+
+</LinearLayout>

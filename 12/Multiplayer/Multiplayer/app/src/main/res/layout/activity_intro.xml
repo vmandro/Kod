@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntroActivity"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/playerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:text="Player Authentication" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:text="You are not logged in!" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="loginButton"/>
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:text="Multiplayer Game" />
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:onClick="newGameButton"/>
+
+    <Button
+        android:id="@+id/joinGame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Game"
+        android:onClick="joinGameButton"/>
+
+    <Button
+        android:id="@+id/howTo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="How To Play"
+        android:onClick="howToButton"/>
+
+    <TextView
+        android:layout_marginTop="36dp"
+        android:id="@+id/authorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:text="Made by Lukáš Gajdošech, Christmas 2018" />
+
+</LinearLayout>

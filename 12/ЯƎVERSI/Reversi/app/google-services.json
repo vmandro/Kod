@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602243746903",
+    "firebase_url": "https://reversi-ac19d.firebaseio.com",
+    "project_id": "reversi-ac19d",
+    "storage_bucket": "reversi-ac19d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602243746903:android:690fce846b5150e9",
+        "android_client_info": {
+          "package_name": "app.reversi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602243746903-6dt0imfm7b3t4crhp1vd2c7nkshehlk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.reversi",
+            "certificate_hash": "e054204df81763e5007f717c83a53976c27f9f22"
+          }
+        },
+        {
+          "client_id": "602243746903-vgpm3aj9q07brp3i0gqvjijkelmptu57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmMpFTlGoY30CDsgNjKIrtAPEHwKJFVUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602243746903-vgpm3aj9q07brp3i0gqvjijkelmptu57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
