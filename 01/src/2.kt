@@ -9,7 +9,8 @@ fun fib1(n: Int): Int {
     return fib(n)
 }
 
-fun main(args: Array<String>) {
+fun main() {
+//    fun main(args: Array<String>) {
     val lst = listOf(1,2,3,4,5,6,7,8,9,10)
     println(lst.map { n -> fib(n) })
     println(lst.map { fib1(it) })
