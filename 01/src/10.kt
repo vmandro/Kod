@@ -9,6 +9,7 @@ fun main(args: Array<String>) {
     { x:Int -> println(x)}(4)
     // preto jasnejsi zapis
     run {{ x:Int -> println(x)}(4)}
+
     val delta = 5
     println(
             listOf(1,2,3)

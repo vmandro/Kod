@@ -128,4 +128,9 @@ fun main(args:Array<String>) {
     println(comb(listOf("a", "b", "c", "d"),2))
     println(comb1(listOf("a", "b", "c", "d"),2))
     println(comb2(listOf("a", "b", "c", "d"),2).forEach { print(it.toList()) })
+//    val xxx = 1..10
+//    for ((i,v) in xxx.withIndex()) {
+//
+//
+//    }
 }
