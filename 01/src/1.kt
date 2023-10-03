@@ -27,6 +27,7 @@ fun main() {
     println(family.all { (it.age ?: 0) < 100 } )
     println(family.all { it.name == "Dracula" } )
     println(family.groupBy { it.father } )
-    println(family.filter { it.age == (family.maxBy { person: APerson -> person.age ?: 0 } ?: 0) } )
-    println(family.filter { it.age == (family.maxBy { it.age ?: 0 } ?: 0) } )
+    println(family.maxBy { person: APerson -> person.age ?: 0 }.age )
+    println(family.filter { it.age == (family.maxBy { person: APerson -> person.age ?: 0 }.age?: 0) } )
+    println(family.filter { it.age == (family.map { it.age?:0 }.max()) } )
 }

@@ -6,7 +6,7 @@ fun main() {
     var m = 10
     m++
     println("m=$m, m^2=${m * m}")
-    val list: List<String> = listOf("Peter", "Pavol", "Michal", "Agata")
+    val list = listOf("Peter", "Pavol", "Michal", "Agata")
     println("list.size= ${list.size}")
     // list.add("Xenia") - nejde, lebo to je imutable list
     val mlist = mutableListOf("Peter", "Pavol", "Michal", "Agata")
@@ -33,7 +33,7 @@ fun main() {
 
     // polia
     val pole = arrayOf(1,2,3,4,5,6,7,8,9,10)
-    val vektor = Array(10) {0}
+    val vektor = Array(10) {99}
     val vektor1 = Array(10) { it+1 }
     println(vektor1.toList())
     val matica = Array(10) {Array(10) {0} }
@@ -66,7 +66,7 @@ fun main() {
     val collection = (-100..100)
         .filter {it % 2 == 0}
         .map { it * 2 }
-        //.map { it/it }
+        .map { it/it }
         .take(10)
     println(collection)
 

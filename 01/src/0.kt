@@ -91,6 +91,7 @@ fun main(args:Array<String>) {
             in 0..5 -> "predskolsky"
             in 5..11 -> "1.stupen"
             in 12..18 -> "2.stupen"
+            in listOf(12,14,10) -> "nic z toho"
             else -> "mimo"
         }
     var kategoria2 = "mimo"
@@ -133,4 +134,12 @@ fun main(args:Array<String>) {
 //
 //
 //    }
+
+    val ww = 1..100
+
+    val xx = 10 downTo 1
+    val yy = 1 until 60
+    val zz = 1..59
+    println("${yy == zz}")
+    println("${yy === zz}")
 }
