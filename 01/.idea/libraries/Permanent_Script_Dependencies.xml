@@ -22,6 +22,7 @@
       <root url="file://$KOTLIN_BUNDLED$/lib/kotlin-test.jar" />
       <root url="file://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7.jar" />
       <root url="file://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk8.jar" />
+      <root url="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2024.1/kotlinNotebook/01.e24bde09/kernels/0.12.0-192/kotlin-jupyter-ide-classpath-shadowed-jar/kotlin-jupyter-ide-classpath-shadowed-0.12.0-192.jar" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -38,6 +39,7 @@
       <root url="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlinx-serialization-core-1.4.1-sources.jar" />
       <root url="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-stdlib-1.8.20-sources.jar" />
       <root url="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/httpcore5-h2-5.2-sources.jar" />
+      <root url="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2024.1/kotlinNotebook/01.e24bde09/kernels/0.12.0-192/kotlin-jupyter-script-classpath-shadowed-sources-jar/kotlin-jupyter-script-classpath-shadowed-0.12.0-192-sources.jar" />
     </SOURCES>
   </library>
 </component>
