@@ -9,11 +9,18 @@ fun fib1(n: Int): Int {
     return fib(n)
 }
 
+fun fib2(n: Int): Int {
+    fun fib(i: Int, a : Int = 0, b : Int = 1): Int {
+        return if (i == n-1) a else fib( i+1, b, a+b)
+    }
+    return fib(0)
+}
 fun main() {
 //    fun main(args: Array<String>) {
     val lst = listOf(1,2,3,4,5,6,7,8,9,10)
     println(lst.map { n -> fib(n) })
-    println(lst.map { fib1(it) })
+    println(lst.map { x -> fib1(x) })
+    println(lst.map { fib2(it) })
     lst.forEach { println("fib($it) = ${fib1(it)}")}
     for(i in 1..11) println("fib($i) = ${fib1(i)}" )
     println("Maximum je ${lst.map { fib(it) }.max()}")
