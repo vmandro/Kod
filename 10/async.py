@@ -2,7 +2,7 @@ import asyncio
 
 async def coroutine1():
     task = asyncio.create_task(coroutine2())
-    task
+    await task
     print(1)
 
 async def coroutine2():
