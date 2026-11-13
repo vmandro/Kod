@@ -1,4 +1,6 @@
 import java.io.File
+import java.util.Locale
+import java.util.Locale.getDefault
 
 fun main() {
     val M = 10
@@ -41,7 +43,7 @@ fun main() {
     //-- zacianame trochu chapat mutable collections ?
 
     println(list2.filter { it.matches("[A-P].*".toRegex()) })
-    println(list2.map { it.toUpperCase() }.sorted())
+    println(list2.map { it.uppercase(getDefault()) }.sorted())
 
     println(list2.drop(2))
     println(list2.take(2))
@@ -99,7 +101,7 @@ fun mostlyUsedWord(fileName : String) {
     val words = File(fileName).readLines()
         .flatMap { it.split("\\W".toRegex())
                      .filter { it.isNotEmpty()}
-                     .map {it.toUpperCase()} }
+                     .map { it.uppercase(getDefault()) } }
     val freq = mutableMapOf<String, Int>()
     for(w in words) {
         freq.compute(w, { _, c -> 1+(c?:0)})

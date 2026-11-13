@@ -1,4 +1,9 @@
-package cviko // len preto, aby sa nebili funkcie s inym modulom
+package cviko
+
+import java.util.Locale
+import java.util.Locale.getDefault
+
+// len preto, aby sa nebili funkcie s inym modulom
 
 fun main() {
     val M = 10
@@ -31,8 +36,8 @@ fun main() {
     println(vektor2.toList())
     val matica = Array(10) { Array(10) {0} }
     //-----------------
-    println(list1.map { it.toUpperCase()})
-    println(list1.map { s:String -> s.toUpperCase()})
+    println(list1.map { it.uppercase(getDefault()) })
+    println(list1.map { s:String -> s.uppercase(getDefault()) })
     println(list1.filter { it.startsWith("P")})
     println(list1.filter { it.matches("[A-P].*".toRegex())})
     println(list1.take(3))

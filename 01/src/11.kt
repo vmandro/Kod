@@ -1,8 +1,11 @@
+import java.util.Locale
+import java.util.Locale.getDefault
+
 fun foo(str : String?) {
     println(str)
     if (str != null)
-        println(str.toUpperCase())
-    println(str?.toUpperCase())     // safe call operator x?.m == if (x != null) x.m else null
+        println(str.uppercase(getDefault()))
+    println(str?.uppercase(getDefault()))     // safe call operator x?.m == if (x != null) x.m else null
 }
 fun stringLen(s: String?): Int = s?.length ?: 0     // Elvis operator
         // if (if (s == null) then null else s.length) == null then 0 else s.length
